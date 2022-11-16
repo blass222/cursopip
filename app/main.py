@@ -19,6 +19,7 @@ def run():
   
   data = read_csv.read_csv('data.csv')
   country = input('Type Country => ')
+  country = country.capitalize()
   print(country)
 
   result = utils.population_by_country(data, country)
